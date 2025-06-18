@@ -1,4 +1,4 @@
-// Welcome to C Programming-1
+//Welcome to C Programming-1
 #include <stdio.h>
 
 main ()
