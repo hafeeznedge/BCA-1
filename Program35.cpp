@@ -24,3 +24,4 @@ using namespace std;
     obj.out();
     //true or false will be given as 1 and 0 
      return 0;
+ }
