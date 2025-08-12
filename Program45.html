@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Services - JS Variables & Operators</title>
+</head>
+<body>
+    <h2 style="background-color: lightblue;"><Center>Real Estate Services</Center></h2>
+    <p id="result" ></p>
+
+    <script>
+        // These are the Variables
+        var propertyName = "Sunshine Apartments";
+        var pricePerUnit = 500000; // price in INR
+        var unitsSold = 3;
+
+        // Using Multiplication (*) Operator 
+        var totalSales = pricePerUnit * unitsSold;
+
+        // Using Addition (+) Operator 
+        var bonus = 20000;
+        var totalWithBonus = totalSales + bonus;
+
+        // Display result
+        document.getElementById("result").innerHTML =
+            "<b> <center > Property: " + propertyName +
+            "<br>Price per Unit: ₹" + pricePerUnit +
+            "<br>Units Sold: " + unitsSold +
+            "<br>Total Sales: ₹" + totalSales +
+            "<br>Total Sales with Bonus: ₹" + totalWithBonus;
+    </script>
+</body>
+</html>
