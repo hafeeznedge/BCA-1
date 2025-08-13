@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>onmouseout Example</title>
+    <style>
+        #BCA {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            border: 2px solid blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JavaScript onmouseout Example</h2>
+
+<div id="BCA" 
+     onmouseover="mouseOverFunction()" 
+     onmouseout="mouseOutFunction()">
+    Hover over me!
+</div>
+
+<script>
+function mouseOverFunction() {
+    document.getElementById("BCA").style.backgroundColor = "orange";
+    document.getElementById("BCA").innerHTML = "Mouse is here!";
+}
+
+function mouseOutFunction() {
+    document.getElementById("BCA").style.backgroundColor = "lightblue";
+    document.getElementById("BCA").innerHTML = "Mouse left!";
+}
+</script>
+
+</body>
+</html>
