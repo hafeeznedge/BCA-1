@@ -1,0 +1,23 @@
+
+<html>
+<body>
+
+<h1>Greeting Based on Time</h1>
+<p id="greeting"></p>
+
+<script type="text/javascript">
+  var d = new Date();
+  var time = d.getHours();
+
+  if (time < 10) {
+    document.getElementById("greeting").innerHTML = "<b>Good morning</b>";
+  } else if (time >= 10) {
+    document.getElementById("greeting").innerHTML = "<b>Good afternoon</b>";
+  }
+</script>
+
+<p>This example demonstrates the If statement.</p>
+<p>If the time on your browser is less than 10, you will get a "Good morning" greeting.</p>
+
+</body>
+</html>
