@@ -1,0 +1,24 @@
+<html> 
+<body>
+<p id="bike"></p>
+
+<script>
+var bike = ["Yamaha", "Suzuki", "Pulsar"];
+var index = 1; // You can change this value to 0, 1, or 2
+
+var selectedBike = "Unknown bike";
+var i = 0;
+
+while (i < bike.length) {
+  if (i === index) {
+    selectedBike = bike[i];
+    break; // exit loop once found
+  }
+  i++;
+}
+
+document.getElementById('bike').innerHTML = selectedBike;
+</script>
+
+</body>
+</html>
