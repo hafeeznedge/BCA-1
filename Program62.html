@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Greeting Based on Time</h1>
+<p id="greeting"></p>
+
+<h2>Selected Property</h2>
+<p id="selectedProperty"></p>
+
+<h2>All Properties (using do-while loop)</h2>
+<p id="allProperties"></p>
+
+<script type="text/javascript">
+  // if-else
+  var d = new Date();
+  var time = d.getHours();
+
+  if (time < 10) {
+    document.getElementById("greeting").innerHTML = "<b>Good morning</b>";
+  } else {
+    document.getElementById("greeting").innerHTML = "<b>Good afternoon</b>";
+  }
+
+  // Arrays
+  var properties = ["Greenvilla", "Sunshine", "Skyline"];
+
+  // Switch statement 
+  var index = 2; 
+  var selectedProperty;
+
+  switch(index) {
+    case 0:
+      selectedProperty = properties[0];
+      break;
+    case 1:
+      selectedProperty = properties[1];
+      break;
+    case 2:
+      selectedProperty = properties[2];
+      break;
+    default:
+      selectedProperty = "Unknown Property";
+  }
+
+  document.getElementById("selectedProperty").innerHTML = selectedProperty;
+
+  // Do-while loop 
+  var i = 0;
+  var list = "";
+  do {
+    list += properties[i] + "<br>";
+    i++;
+  } while (i < properties.length);
+
+  document.getElementById("allProperties").innerHTML = list;
+</script>
+
+</body>
+</html>
+
